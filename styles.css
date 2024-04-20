@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --branco: #ffffff;
+    --cinza-claro: #696063;
+    --preto: #000000;
+    --marrom: #9b5041;
+    --magenta-claro: #FFF7FC;
+    --magenta-escuro: #762D4A;
+    --creme: #F3E5D8;
+    --magenta-claro: #FFF7FC;
+    --cinza-mais-claro: #f6f6f6;
+
+    --fonte-principal: "Outfit";
+    --fonte-secundaria: "Young Serif";
+}
+img {
+    border-radius: 12px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--creme);
+    font-family: var(--fonte-principal);
+    color: var(--cinza-claro);
+    line-height: 25px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: var(--branco);
+    padding: 2rem;
+    margin: 5rem 0;
+    border-radius: 12px;
+    line-height: 25px;
+}
+.Resumo__titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 32px;
+    color: var(--preto);
+    font-weight: 500;
+    padding: 2rem 0 0 0;
+}
+.Resumo__texto {
+    padding: 1rem 0;
+}
+li {
+    list-style: disc;
+    padding-left: 1rem;
+}
+li::marker {
+    color: var(--marrom);
+}
+.preparação__item::marker {
+    color: var(--magenta-escuro);
+}
+.preparação {
+    background-color: var(--magenta-claro);
+    padding: 1rem;
+    border-radius: 12px;
+    line-height: 30px;
+}
+.preparação__titulo {
+    margin: 0 0 0 1rem;
+    color: var(--magenta-escuro);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0;
+    font-family: var(--fonte-principal);
+}
+h2 {
+    font-family: var(--fonte-secundaria);
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--marrom);
+    padding: 1.5rem 0;
+}
+hr {
+    margin: 26px 0 5px 0;
+    border-top: 1px solid var(--cinza-mais-claro);
+}
+.instruções__item {
+    list-style: decimal;
+}
+.instruções__item::marker {
+    font-weight: 700;
+}
+.tabela {
+    width: 100%;
+}
+td {
+    padding: 1rem 0 1rem 1rem;
+    border-bottom: 3px solid var(--cinza-mais-claro);
+}
+.tabela__conteudo__valor {
+    color: var(--marrom);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: var(--branco);
+    }
+    img {
+        overflow: clip;
+        border-radius: 12px;
+        width: 100%;
+    }
+    .container {
+        width: auto;
+        margin: 0;
+    }
+}
